@@ -1,5 +1,7 @@
 package br.com.alura.loja.dto;
 
+import br.com.alura.loja.model.Compra;
+
 public class CompraSucesso {
 
     private Long id;
@@ -10,6 +12,12 @@ public class CompraSucesso {
         this.id = id;
         this.tempoPreparo = tempoPreparo;
         this.enderecoEntrega = enderecoEntrega;
+    }
+
+    public CompraSucesso(Compra compra) {
+        this.id = compra.getId();
+        this.tempoPreparo = compra.getTempoPreparo();
+        this.enderecoEntrega = compra.getEnderecoEntrega();
     }
 
     public Long getId() {

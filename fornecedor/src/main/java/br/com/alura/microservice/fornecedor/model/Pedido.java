@@ -19,7 +19,7 @@ public class Pedido {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	private Integer tempoDePreparo;
+	private Integer tempoPreparo;
 	
 	@Enumerated(EnumType.STRING)
 	private PedidoStatus status;
@@ -60,11 +60,11 @@ public class Pedido {
 		this.status = status;
 	}
 
-	public Integer getTempoDePreparo() {
-		return tempoDePreparo;
+	public Integer getTempoPreparo() {
+		return tempoPreparo;
 	}
 
-	public void setTempoDePreparo(Integer tempoDePreparo) {
-		this.tempoDePreparo = tempoDePreparo;
+	public void setTempoPreparo(Integer tempoDePreparo) {
+		this.tempoPreparo = tempoDePreparo;
 	}
 }
